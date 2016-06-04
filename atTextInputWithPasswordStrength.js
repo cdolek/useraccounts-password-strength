@@ -1,6 +1,6 @@
 import {
     getPasswordStrength
-} from './accounts-password-strength.js';
+} from './useraccounts-password-strength.js';
 
 Template.atTextInputWithPasswordStrength.onCreated(function() {
     this.strength = ReactiveVar(0);
