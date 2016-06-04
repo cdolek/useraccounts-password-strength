@@ -37,3 +37,6 @@ Colors for strength levels
 ## ToDo
 - Customization options
 - Server side validation
+
+## LICENSE
+MIT
