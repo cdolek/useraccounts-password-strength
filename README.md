@@ -6,8 +6,10 @@ Uses
 - [useraccounts:bootstrap](https://github.com/meteor-useraccounts/bootstrap/)
 
 ## Usage
-Replaces "password" field with a text input having a password strength indicator.
-Requires strong passwords as default
+Replaces "password" field with a text input having a password strength indicator below.
+
+Requires **strong passwords** as default with the following rules:
+
 - Min 8 characters
 - Uppercase letters
 - Lowercase letters
