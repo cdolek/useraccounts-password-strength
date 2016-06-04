@@ -1,8 +1,8 @@
 Package.describe({
-    name: 'cenk:accounts-password-strength',
+    name: 'cenk:useraccounts-password-strength',
     version: '0.0.1',
     summary: 'This package allows you to set strong passwords for your meteor-useraccounts enabled meteor application. Also places a strength indicator.',
-    git: 'https://github.com/cdolek/accounts-password-strength/tree/master',
+    git: 'https://github.com/cdolek/useraccounts-password-strength',
     documentation: 'README.md'
 });
 
@@ -18,12 +18,12 @@ Package.onUse(function(api) {
         'atTextInputWithPasswordStrength.html',
         'atTextInputWithPasswordStrength.js'
     ], 'client');
-    api.mainModule('accounts-password-strength.js');
+    api.mainModule('useraccounts-password-strength.js');
 });
 
 Package.onTest(function(api) {
     api.use('ecmascript');
     api.use('tinytest');
-    api.use('cenk:accounts-password-strength');
-    api.mainModule('accounts-password-strength-tests.js');
+    api.use('cenk:useraccounts-password-strength');
+    api.mainModule('useraccounts-password-strength-tests.js');
 });
