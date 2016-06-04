@@ -39,6 +39,7 @@ Colors for strength levels
 ## ToDo
 - Customization options
 - Server side validation
+- Other styles than Bootstrap
 
 ## LICENSE
 MIT
