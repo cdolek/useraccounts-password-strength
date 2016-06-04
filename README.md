@@ -36,6 +36,9 @@ Colors for strength levels
 }
 ```
 
+## Changelog
+- v0.0.1 Initial version
+
 ## ToDo
 - Customization options
 - Server side validation
