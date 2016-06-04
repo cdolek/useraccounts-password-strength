@@ -1,9 +1,9 @@
-# accounts-password-strength
-This package allows you to set password strength for your meteor application.
+# cenk:useraccounts-password-strength
+This package allows you to set strong passwords for your meteor-useraccounts enabled meteor application. Also places a strength indicator.
 
-Uses 
+Uses
 - [meteor-useraccounts](https://github.com/meteor-useraccounts)
-- [useraccounts:bootstrap](https://github.com/meteor-useraccounts/bootstrap/) 
+- [useraccounts:bootstrap](https://github.com/meteor-useraccounts/bootstrap/)
 
 ## Usage
 Replaces "password" field with a text input having a password strength indicator.
