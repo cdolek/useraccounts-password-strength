@@ -9,9 +9,7 @@ Package.describe({
 Package.onUse(function(api) {
     api.versionsFrom('1.3.2.4');
     api.use('ecmascript');
-    api.use('useraccounts:bootstrap');
-    api.use('accounts-password');
-    api.use('check');
+    api.use(['useraccounts:bootstrap', 'accounts-password', 'check']);
     api.use(['templating'], 'client');
     api.addFiles([
         'atTextInputWithPasswordStrength.css',
@@ -24,6 +22,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
     api.use('ecmascript');
     api.use('tinytest');
-    api.use('cenk:useraccounts-password-strength');
+    // api.use('cenk:useraccounts-password-strength');
     api.mainModule('useraccounts-password-strength-tests.js');
 });
