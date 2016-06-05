@@ -9,7 +9,7 @@ Package.describe({
 Package.onUse(function(api) {
     api.versionsFrom('1.3.2.4');
     api.use('ecmascript');
-    api.use(['useraccounts:bootstrap', 'accounts-password', 'check']);
+    api.use(['useraccounts:bootstrap@1.12.3', 'accounts-password', 'check']);
     api.use(['templating'], 'client');
     api.addFiles([
         'atTextInputWithPasswordStrength.css',
