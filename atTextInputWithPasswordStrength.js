@@ -10,7 +10,7 @@ Template.atTextInputWithPasswordStrength.onCreated(function() {
 Template.atTextInputWithPasswordStrength.helpers({
     showStrengthLevel: function() {
         var enabledStatesArr = ["enrollAccount", "signUp", "resetPwd"];
-        return $.inArray(AccountsTemplates.getState(), enabledStatesArr) > -1;
+        return enabledStatesArr.indexOf(AccountsTemplates.getState()) > -1;
     },
     strength: function() {
         return Template.instance().strength.get();
