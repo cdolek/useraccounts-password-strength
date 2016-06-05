@@ -1,7 +1,7 @@
 Package.describe({
     name: 'cenk:useraccounts-password-strength',
     version: '0.0.1',
-    summary: 'This package allows you to set strong passwords for your meteor-useraccounts enabled meteor application. Also places a strength indicator.',
+    summary: 'Allows you to set strong passwords for your meteor-useraccounts enabled application.',
     git: 'https://github.com/cdolek/useraccounts-password-strength',
     documentation: 'README.md'
 });
