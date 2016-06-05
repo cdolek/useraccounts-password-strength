@@ -8,8 +8,8 @@ Template.atTextInputWithPasswordStrength.onCreated(function() {
 });
 
 Template.atTextInputWithPasswordStrength.helpers({
-    isSignUpState: function() {
-        return AccountsTemplates.getState() === 'signUp';
+    showStrengthLevel: function() {
+        return AccountsTemplates.getState() === 'signUp' || AccountsTemplates.getState() === 'resetPwd';
     },
     strength: function() {
         return Template.instance().strength.get();
