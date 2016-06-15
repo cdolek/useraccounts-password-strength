@@ -37,6 +37,7 @@ Colors for strength levels
 ```
 
 ## Changelog
+- v0.0.2 Better handling of password states
 - v0.0.1 Initial version
 
 ## ToDo
