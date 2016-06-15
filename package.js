@@ -11,6 +11,7 @@ Package.onUse(function(api) {
     api.use('ecmascript');
     api.use(['useraccounts:bootstrap@1.12.3', 'accounts-password', 'check']);
     api.use(['templating'], 'client');
+    api.export(['AccountsTemplates']);
     api.addFiles([
         'atTextInputWithPasswordStrength.css',
         'atTextInputWithPasswordStrength.html',
