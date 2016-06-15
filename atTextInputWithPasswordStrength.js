@@ -2,6 +2,16 @@ import {
     getPasswordStrength
 } from './useraccounts-password-strength.js';
 
+const enabledStatesArr = ["enrollAccount", "signUp", "resetPwd", "changePwd"];
+
+Template.atForm.onCreated(function() {
+    if (typeof this.data.state !== 'undefined') {
+        if (enabledStatesArr.indexOf(this.data.state) > -1) {
+            AccountsTemplates.setState(this.data.state);
+        }
+    }
+});
+
 Template.atTextInputWithPasswordStrength.onCreated(function() {
     this.strength = ReactiveVar(0);
     this.strengthText = ReactiveVar('');
@@ -9,7 +19,6 @@ Template.atTextInputWithPasswordStrength.onCreated(function() {
 
 Template.atTextInputWithPasswordStrength.helpers({
     showStrengthLevel: function() {
-        var enabledStatesArr = ["enrollAccount", "signUp", "resetPwd"];
         return enabledStatesArr.indexOf(AccountsTemplates.getState()) > -1;
     },
     strength: function() {
